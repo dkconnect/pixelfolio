@@ -1,0 +1,66 @@
+/* Responsive styles - styles/responsive.css */
+@media (max-width: 768px) {
+    /* Make navigation mobile-friendly */
+    .pixel-nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .pixel-nav.active ul {
+        display: flex;
+    }
+
+    .pixel-nav .logo {
+        font-size: 1.5rem;
+    }
+    
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    /* Adjust hero section */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content .subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Ensure images scale properly */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Stack sections vertically */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .education-table,
+    .experience-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    /* Adjust project grid */
+    .project-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
