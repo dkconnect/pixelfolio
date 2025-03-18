@@ -176,6 +176,27 @@ body {
     border-radius: 2px;
 }
 
+.edu-logo {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures proper spacing */
+}
+.education-table {
+    width: 100%;
+    max-width: 600px; /* Adjust max width */
+    margin: auto;
+    border-collapse: collapse;
+}
+.edu-logo-cell {
+    width: 120px; /* Ensures consistent logo spacing */
+    text-align: center;
+}
+.edu-details-cell {
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+
 /* Minimal Projects Section */
 .projects-container {
     margin-top: 2rem;
