@@ -7,6 +7,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+document.querySelector(".menu-toggle").addEventListener("click", function() {
+    document.querySelector(".pixel-nav").classList.toggle("active");
+});
+
 
 // Glitch effect for text elements with data-text attribute
 function initGlitchEffect(element) {
