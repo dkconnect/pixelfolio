@@ -176,25 +176,33 @@ body {
     border-radius: 2px;
 }
 
-.edu-logo {
-    width: 100px; /* Adjust width as needed */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures proper spacing */
-}
-.education-table {
+.education-table, .experience-table {
     width: 100%;
-    max-width: 600px; /* Adjust max width */
-    margin: auto;
+    max-width: 800px;
+    margin: 20px auto;
     border-collapse: collapse;
 }
-.edu-logo-cell {
-    width: 120px; /* Ensures consistent logo spacing */
+
+.edu-logo-cell, .exp-logo-cell {
+    width: 100px; /* Adjust width as needed */
     text-align: center;
-}
-.edu-details-cell {
-    padding-left: 20px;
     vertical-align: middle;
 }
+
+.edu-logo, .exp-logo {
+    max-width: 80px; /* Adjust size to fit */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.edu-details-cell, .exp-details-cell {
+    padding: 10px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+
 
 
 /* Minimal Projects Section */
