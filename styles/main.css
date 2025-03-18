@@ -301,6 +301,25 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.project-image {
+    width: 100%; /* Make the image container take full width */
+    height: 200px; /* Set a fixed height for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent images from breaking layout */
+    border-radius: 8px; /* Optional: smooth rounded corners */
+    background-color: var(--surface); /* Optional: background if image is transparent */
+}
+
+.project-image img {
+    width: 100%; /* Make the image responsive */
+    height: 100%; /* Cover the entire container */
+    object-fit: cover; /* Ensures image scales without stretching */
+    border-radius: 8px; /* Match the container */
+}
+
+
 .tech-tag {
     font-size: 0.7rem;
     color: var(--text-secondary);
