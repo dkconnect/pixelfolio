@@ -349,91 +349,22 @@ body {
     background: var(--primary);
 }
 
-/* Minimal Contact Section */
-.contact-container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.contact-description {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.contact-form {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.form-group {
-    display: grid;
-    gap: 0.5rem;
-}
-
-.form-label {
-    font-size: 0.75rem;
-    color: var(--text);
-}
-
-.form-input {
-    width: 100%;
-    padding: 0.75rem;
-    background: var(--surface);
-    border: 1px solid var(--surface);
-    border-radius: 4px;
-    color: var(--text);
-    font-family: inherit;
-    font-size: 0.8rem;
-    transition: border-color 0.2s ease;
-}
-
-.form-input:focus {
-    outline: none;
-    border-color: var(--primary);
-}
-
-textarea.form-input {
-    min-height: 120px;
-    resize: vertical;
-}
-
-.contact-submit {
-    background: var(--primary);
-    color: var(--text);
-    border: none;
-    padding: 0.75rem;
-    font-size: 0.8rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: opacity 0.2s ease;
-}
-
-.contact-submit:hover {
-    opacity: 0.9;
-}
-
-.contact-alternatives {
-    margin-top: 3rem;
-    text-align: center;
-}
-
-.contact-alternatives h3 {
-    font-size: 0.9rem;
-    color: var(--text);
-    margin-bottom: 1rem;
-}
-
-.social-links-alt {
+.certificate-image {
+    width: 100%; /* Full width of the card */
+    height: 180px; /* Adjust based on your certificate image proportions */
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    overflow: hidden;
+    border-radius: 8px; /* Smooth rounded corners */
+    background-color: var(--surface); /* Background if image is transparent */
+}
+
+.certificate-image img {
+    width: 100%; /* Responsive width */
+    height: 100%; /* Keep uniform size */
+    object-fit: contain; /* Ensures full image fits inside */
+    border-radius: 8px;
 }
 
 .social-link {
